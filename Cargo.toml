@@ -22,15 +22,15 @@ travis-ci = { repository = "dalek-cryptography/ed25519-dalek", branch = "master"
 features = ["nightly", "batch"]
 
 [dependencies]
-curve25519-dalek = { version = "3", default-features = false }
+curve25519-dalek = { version = "=4.0.0-pre.2", default-features = false }
 ed25519 = { version = "1", default-features = false }
 merlin = { version = "3", default-features = false, optional = true }
 rand = { version = "0.8", default-features = false, optional = true }
 rand_core = { version = "0.6", default-features = false, optional = true }
 serde_crate = { package = "serde", version = "1.0", default-features = false, optional = true }
 serde_bytes = { version = "0.11", optional = true }
-sha2 = { version = "0.9", default-features = false }
-zeroize = { version = "1.4", default-features = false }
+sha2 = { version = "0.10", default-features = false }
+zeroize = { version = "1.3", default-features = false }
 
 [dev-dependencies]
 hex = "0.4"
